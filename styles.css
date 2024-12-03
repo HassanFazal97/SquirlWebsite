@@ -1,0 +1,355 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    height: 80px;
+    background: linear-gradient(to right, black, rebeccapurple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px;
+}
+
+nav img {
+    height: 60px;
+    margin-right: px; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0 0.5rem;
+    margin: 0 10px; 
+}
+.nav-items{
+    display: flex;
+    gap: rem;
+}
+nav a:hover {
+    text-decoration: underline; 
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    background: url('/Icons/Squirl_Banner-removebg-preview.png') no-repeat center center fixed;
+    background-size: contain; 
+    font-family: 'Times New Roman', Times, serif;
+    color: white; 
+}
+
+
+.hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(48, 25, 52, 0.9));
+    color: #ffffff; 
+}
+
+
+
+
+
+.hero-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: start; 
+    min-height: 60vh; 
+    padding: 5rem calc((100vw - 1300px) / 2);
+    text-align: center; 
+}
+
+.column-left {
+    display: block; 
+    color: azure;
+    padding: 0rem 2rem;
+}
+
+
+.column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+@keyframes darker-neon-flicker {
+    0%, 18%, 20%, 22%, 25%, 55%, 57%, 100% {
+        text-shadow: 
+            0 0 3px rgba(102, 51, 153, 0.8), 
+            0 0 6px rgba(102, 51, 153, 0.8), 
+            0 0 12px rgba(102, 51, 153, 0.8), 
+            0 0 20px rgba(102, 51, 153, 0.8);
+    }
+    19%, 21%, 56% {
+        text-shadow: 
+            0 0 2px rgba(102, 51, 153, 0.6), 
+            0 0 4px rgba(102, 51, 153, 0.6), 
+            0 0 10px rgba(102, 51, 153, 0.6), 
+            0 0 15px rgba(102, 51, 153, 0.6);
+    }
+}
+
+.column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 7.6rem;
+    color: white;
+    text-shadow: 
+        0 0 3px rgba(102, 51, 153, 0.8), 
+        0 0 6px rgba(102, 51, 153, 0.8), 
+        0 0 12px rgba(102, 51, 153, 0.8), 
+        0 0 20px rgba(102, 51, 153, 0.8);
+    animation: darker-neon-flicker 1.5s infinite;
+}
+
+
+.mission {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(48, 25, 52, 0.9));
+    color: white;
+}
+
+.mission h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(102, 51, 153, 0.8);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    text-shadow: 
+        0 0 3px rgba(102, 51, 153, 0.8), 
+        0 0 6px rgba(102, 51, 153, 0.8), 
+        0 0 12px rgba(102, 51, 153, 0.8), 
+        0 0 20px rgba(102, 51, 153, 0.8);
+    animation: darker-neon-flicker 1.5s infinite;
+}
+
+.mission-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9); 
+}
+
+
+
+.team {
+    padding: 2rem;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(48, 25, 52, 0.9));
+    color: white;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: white;
+    text-shadow: 
+        0 0 3px rgba(102, 51, 153, 0.8), 
+        0 0 6px rgba(102, 51, 153, 0.8), 
+        0 0 12px rgba(102, 51, 153, 0.8), 
+        0 0 20px rgba(102, 51, 153, 0.8);
+    animation: darker-neon-flicker 1.5s infinite;
+}
+
+.team-section {
+    margin-bottom: 3rem;
+}
+
+.team-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-bottom: 2px solid rgba(102, 51, 153, 0.8);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.team-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    align-items: stretch; 
+}
+
+.team-member {
+    flex: 0 0 200px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+    background: rgba(102, 51, 153, 0.2);
+}
+
+
+.team-member.lead {
+    border: 2px solid rgba(102, 51, 153, 0.8);
+    padding: 1rem;
+}
+
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.team-member p {
+    margin: 0.3rem 0;
+}
+
+.team-member .role {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer {
+    margin-top: auto;
+    background: #1a1a1a; 
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    padding-bottom: 0.5rem;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; 
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+   
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.social-links a:hover img {
+    transform: scale(1.2); 
+    opacity: 0.8; /
+}
+
+
+
+.contact {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(48, 25, 52, 0.9));
+    color: white;
+
+}
+
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(102, 51, 153, 0.8);
+    display: inline-block;
+    padding-bottom: 1rem;
+    text-shadow: 
+        0 0 3px rgba(102, 51, 153, 0.8), 
+        0 0 6px rgba(102, 51, 153, 0.8), 
+        0 0 12px rgba(102, 51, 153, 0.8), 
+        0 0 20px rgba(102, 51, 153, 0.8);
+    animation: darker-neon-flicker 1.5s infinite;
+}
+
+.contact-description {
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 2.5rem;
+}
+
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3rem;
+}
+
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 51, 153, 0.8);
+}
+
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(102, 51, 153, 0.8);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background: rgba(102, 51, 153, 1);
+    transform: scale(1.05);
+}
